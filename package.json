@@ -1,0 +1,16 @@
+{
+    "name": "technology-doc-leebai",
+    "version": "1.0.0",
+    "description": "my personal website for recording my experience of coding",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "docs:dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+        "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
+    },
+    "author": "runningriven@gmail.com",
+    "license": "ISC",
+    "devDependencies": {
+        "vuepress": "^1.9.9"
+    }
+}
