@@ -1,5 +1,5 @@
 module.exports = {
-    title: '长水的技术小窝',
+    title: '且与疾风随行的技术小窝',
     description: 'Just playing around',
     themeConfig: {
         siderbar: 'auto',

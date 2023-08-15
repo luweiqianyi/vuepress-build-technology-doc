@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /images/home.jpg
-heroText: 长水的技术小窝
+heroText: 且与疾风随行的技术小窝
 tagline: 积跬步以致千里，汇小流而成江海
 actionText: 快速进入 →
 actionLink: /vuepress-tutorial/1.website-init.html
@@ -15,5 +15,5 @@ features:
 ---
 
 ::: slot footer
-MIT Licensed | Copyright © 2023-2023 [长水](https://github.com/luweiqianyi)
+MIT Licensed | Copyright © 2023-2023 [且与疾风随行](https://github.com/luweiqianyi)
 ::: 
