@@ -5,6 +5,7 @@ module.exports = {
         siderbar: 'auto',
         nav: [
             { text: '主页', link: '/' },
+            { text: 'Docker', link: '/docker/docker-image-build' },
             { text: 'vuepress搭建文档教程', link: '/vuepress-tutorial/1.website-init.html' }
         ]
     }
