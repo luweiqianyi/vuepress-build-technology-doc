@@ -1,5 +1,7 @@
 ---
 sidebar: auto
+prev: false
+next: /linux/01-start-nginx.html
 ---
 # Linux基本目录结构
 Linux的根目录为`/`，该目录是整个文件系统的起点。根目录下主要包含以下目录。
