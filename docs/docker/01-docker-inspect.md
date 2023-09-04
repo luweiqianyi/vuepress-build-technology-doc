@@ -1,5 +1,7 @@
 ---
 sidebar: auto
+prev: /docker/00-docker-image-build.html
+next: false
 ---
 # docker inspect命令
 以下`docker inspect`命令的使用皆基于本文中提供的`docker-compose.yml`所构建的容器。

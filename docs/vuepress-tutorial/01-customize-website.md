@@ -1,6 +1,6 @@
 ---
 sidebar: auto
-prev: /vuepress-tutorial/1.website-init.html
+prev: /vuepress-tutorial/00-website-init.html
 next: false
 ---
 # 自定义定制文档

@@ -6,10 +6,10 @@ module.exports = {
         nav: [
             { text: '主页', link: '/' },
             { text: 'go-zero', link: '/go-zero/01-quick-start.html' },
-            { text: 'Docker', link: '/docker/docker-image-build.html' },
-            { text: 'Linux', link: '/linux/linux-directory.html' },
-            { text: 'vuepress搭建文档教程', link: '/vuepress-tutorial/1.website-init.html' },
-            { text: 'TLS', link: '/tls/make-cert.html' },
+            { text: 'Docker', link: '/docker/00-docker-image-build.html' },
+            { text: 'Linux', link: '/linux/00-linux-directory.html' },
+            { text: 'vuepress搭建文档教程', link: '/vuepress-tutorial/00-website-init.html' },
+            { text: 'TLS', link: '/tls/00-make-cert.html' },
             { text: 'redis', link: '/redis/01-pub-sub.html' },
         ]
     }

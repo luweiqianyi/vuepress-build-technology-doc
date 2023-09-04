@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: false
-next: /vuepress-tutorial/2.customize-website.html
+next: /vuepress-tutorial/01-customize-website.html
 ---
 # vuepress搭建技术文档
 ## 搭建步骤
