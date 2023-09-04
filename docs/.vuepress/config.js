@@ -5,7 +5,7 @@ module.exports = {
         siderbar: 'auto',
         nav: [
             { text: '主页', link: '/' },
-            { text: 'go-zero', link: '/go-zero/quick-start.html' },
+            { text: 'go-zero', link: '/go-zero/01-quick-start.html' },
             { text: 'Docker', link: '/docker/docker-image-build.html' },
             { text: 'Linux', link: '/linux/linux-directory.html' },
             { text: 'vuepress搭建文档教程', link: '/vuepress-tutorial/1.website-init.html' },
