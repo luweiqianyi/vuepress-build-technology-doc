@@ -10,6 +10,7 @@ module.exports = {
             { text: 'Linux', link: '/linux/linux-directory.html' },
             { text: 'vuepress搭建文档教程', link: '/vuepress-tutorial/1.website-init.html' },
             { text: 'TLS', link: '/tls/make-cert.html' },
+            { text: 'redis', link: '/redis/pub-sub.html' },
         ]
     }
 }
