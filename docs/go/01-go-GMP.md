@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: false
-next: false
+next: /go/02-go-framework.html
 ---
 # golang GMP模型
 * G: goroutine(协程)
