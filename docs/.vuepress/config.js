@@ -5,6 +5,7 @@ module.exports = {
         siderbar: 'auto',
         nav: [
             { text: '主页', link: '/' },
+            { text: 'go', link: '/go/01-go-GMP.html' },
             { text: 'go-zero', link: '/go-zero/01-quick-start.html' },
             { text: 'Docker', link: '/docker/00-docker-image-build.html' },
             { text: 'Linux', link: '/linux/00-linux-directory.html' },
