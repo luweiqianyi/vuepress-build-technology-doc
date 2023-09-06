@@ -1,2 +1,6 @@
 /docs/.vuepress/dist
 /node_modules
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/vuepress-build-technology-doc.iml
