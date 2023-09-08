@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /redis/01-pub-sub.html
-next: false
+next: /redis/03-redis-issues.html
 ---
 # docker-compose搭建redis集群(一)
 ## 准备`docker-compose.yml`
