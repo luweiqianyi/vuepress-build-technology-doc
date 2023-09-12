@@ -138,3 +138,4 @@ PASS
 
 ## 参考
 * 其他API的使用详见：[minio-go](https://github.com/minio/minio-go)
+* 项目源码详见：[luweiqianyi: minio-demo](https://github.com/luweiqianyi/go/tree/master/minio-demo)
