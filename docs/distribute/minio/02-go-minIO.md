@@ -132,6 +132,7 @@ PASS
 ```
 #### 后台验证
 ![](./imgs/code-upload-file.png)
+![](./imgs/code-upload-file-view.png)
 
 如上所示，文件确实传上去了。
 
