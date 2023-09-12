@@ -12,6 +12,7 @@ module.exports = {
             { text: 'vuepress搭建文档教程', link: '/vuepress-tutorial/00-website-init.html' },
             { text: 'TLS', link: '/tls/00-make-cert.html' },
             { text: 'redis', link: '/redis/01-pub-sub.html' },
+            { text: 'distribute', link: '/distribute/minio/01-minIO.html' },
         ]
     }
 }
