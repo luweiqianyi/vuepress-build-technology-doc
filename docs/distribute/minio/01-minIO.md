@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: false
-next: false
+next: /distribute/minio/02-go-minIO.html
 ---
 # MinIO简介
 ## 是什么
@@ -29,6 +29,9 @@ services:
     command: server --console-address ':9001' /data  #指定容器中的目录 /data
 ```
 > 注意：以上账号名和密码的配置的要求是“账号名必须至少有3个字符，密码必须至少有8个字符”，否则容器应用无法启动
+
+> 9000是minio服务端的访问端口
+> 9001是minio web管理平台的访问端口
 ### 部署脚本
 ```shell
 docker-compose up -d
