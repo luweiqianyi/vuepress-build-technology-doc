@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /go/01-go-GMP.html
-next: false
+next: /go/03-graceful-go-code-01.html
 ---
 # go开源库收集
 * [Pion WebRTC](https://github.com/pion/webrtc)
