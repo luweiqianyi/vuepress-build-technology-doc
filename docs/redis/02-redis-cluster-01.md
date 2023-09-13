@@ -4,6 +4,7 @@ prev: /redis/01-pub-sub.html
 next: /redis/02-redis-cluster-02.html
 ---
 # 搭建redis集群(一)：docker-compose
+平台：`Windows`,`Docker`网络模式使用`bridge`。
 ## 准备`docker-compose.yml`
 定义6个redis服务。
 ```yml
@@ -233,4 +234,81 @@ OK
 ```shell
 root@d3701d01f8cc:/data# redis-cli -c -p 7001 get name
 "leebai"
+```
+
+## 存在的问题
+<font color=#37a462 size=6>单节点方式访问数据可以访问，集群方式访问数据无法访问。暂时不知道原因。</font>
+> 命令行执行命令`telnet 127.0.0.1 7001`测试时发现端口是通的。
+### 代码
+```go
+package test
+
+import (
+	"context"
+	"fmt"
+	"github.com/go-redis/redis/v8"
+	"testing"
+)
+
+const (
+	node1 = "127.0.0.1"
+	node2 = "127.0.0.1"
+	node3 = "127.0.0.1"
+	node4 = "127.0.0.1"
+	node5 = "127.0.0.1"
+	node6 = "127.0.0.1"
+)
+
+func TestRedisOneNode(t *testing.T) {
+	cli := redis.NewClient(&redis.Options{
+		Addr:     "127.0.0.1:7002",
+		Password: "", // no password set
+		DB:       0,  // use default DB
+	})
+
+	pong := cli.Ping(context.Background())
+	fmt.Printf("pong: %v\n", pong)
+
+	get := cli.Get(context.Background(), "name")
+	fmt.Printf("get: %v\n", get)
+}
+
+func TestRedisCluster(t *testing.T) {
+	client := redis.NewClusterClient(&redis.ClusterOptions{
+		Addrs: []string{
+			fmt.Sprintf("%v:7001", node1),
+			fmt.Sprintf("%v:7002", node2),
+			fmt.Sprintf("%v:7003", node3),
+			fmt.Sprintf("%v:7004", node4),
+			fmt.Sprintf("%v:7005", node5),
+			fmt.Sprintf("%v:7006", node6),
+		},
+	})
+	ctx := context.Background()
+
+	pingResp := client.Ping(ctx)
+	fmt.Printf("pingResp: %v\n", pingResp)
+	// 关闭客户端连接
+	err := client.Close()
+	if err != nil {
+		panic(err)
+	}
+}
+
+```
+### 测试结果
+#### 连接单个节点
+```log
+=== RUN   TestRedisOneNode
+pong: ping: PONG
+get: get name: leebai
+--- PASS: TestRedisOneNode (0.00s)
+PASS
+```
+#### 连接整个集群
+```log
+=== RUN   TestRedisCluster
+pingResp: ping: dial tcp 172.16.10.1:7001: i/o timeout
+--- PASS: TestRedisCluster (20.15s)
+PASS
 ```
