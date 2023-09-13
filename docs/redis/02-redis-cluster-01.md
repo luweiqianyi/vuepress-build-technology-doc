@@ -1,9 +1,9 @@
 ---
 sidebar: auto
 prev: /redis/01-pub-sub.html
-next: /redis/03-redis-issues.html
+next: /redis/02-redis-cluster-02.html
 ---
-# docker-compose搭建redis集群(一)
+# 搭建redis集群(一)：docker-compose
 ## 准备`docker-compose.yml`
 定义6个redis服务。
 ```yml
