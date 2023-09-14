@@ -1,6 +1,6 @@
 ---
 sidebar: auto
-prev: /redis/02-redis-cluster-01.html
+prev: /distribute/redis/02-redis-cluster-01.html
 next: false
 ---
 # redis遇到的问题及解决办法

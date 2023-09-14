@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: false
-next: /redis/02-redis-cluster-01.html
+next: /distribute/redis/02-redis-cluster-01.html
 ---
 # redis发布订阅模式
 Redis 提供发布订阅（Pub/Sub）模式，它是一种消息传递模型，允许多个客户端通过订阅频道来接收消息并进行发布。发布者（Publisher）向指定的频道发送消息，而订阅者（Subscriber）则从频道订阅并接收这些消息。

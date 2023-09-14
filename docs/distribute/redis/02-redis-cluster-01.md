@@ -1,7 +1,7 @@
 ---
 sidebar: auto
-prev: /redis/01-pub-sub.html
-next: /redis/02-redis-cluster-02.html
+prev: /distribute/redis/01-pub-sub.html
+next: /distribute/redis/02-redis-cluster-02.html
 ---
 # 搭建redis集群(一)：docker-compose
 平台：`Windows`,`Docker`网络模式使用`bridge`。

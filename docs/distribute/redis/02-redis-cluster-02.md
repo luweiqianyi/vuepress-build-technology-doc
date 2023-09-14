@@ -1,7 +1,7 @@
 ---
 sidebar: auto
-prev: /redis/02-redis-cluster-01.html
-next: /redis/03-redis-issues.html
+prev: /distribute/redis/02-redis-cluster-01.html
+next: /distribute/redis/03-redis-issues.html
 ---
 # 搭建redis集群(二)：docker命令
 平台：`Windows`,依次执行下面脚本即可。部署的时候选择的网络模式是`host`，让容器和主机共享网络栈。
