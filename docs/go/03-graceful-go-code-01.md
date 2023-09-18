@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /go/02-go-framework.html
-next: false
+next: /go/04-gin-pprof.html
 ---
 # 优雅的go代码(一）
 ## 设计原则
