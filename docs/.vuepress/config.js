@@ -36,6 +36,7 @@ module.exports = {
             },
             { text: 'vuepress', link: '/vuepress-tutorial/00-website-init.html' },
             { text: 'algorithm', link: '/algorithm/00-intrduction.html' },
+            { text: 'kubernetes', link: '/kubernetes/01-minikube.html' },
         ]
     }
 }
