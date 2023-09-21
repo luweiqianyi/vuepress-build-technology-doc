@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: false
-next: /kubernetes/02-pod.html
+next: /kubernetes/02-pod-1.html
 ---
 # minikube
 ## 环境要求
