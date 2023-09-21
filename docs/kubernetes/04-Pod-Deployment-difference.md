@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /kubernetes/03-deployments.html
-next: false
+next: /kubernetes/05-job.html
 ---
 # `Pod`与`Deployment`的区别
 在`Kubernetes`中，`Pod`和`Deployment`是两个不同的资源对象，用于管理容器化应用的部署。它们有以下区别：
