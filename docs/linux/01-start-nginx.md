@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/00-linux-directory.html
-next: false
+next: /linux/02-wsl.html
 ---
 
 # 我的nginx

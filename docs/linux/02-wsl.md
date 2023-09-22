@@ -1,3 +1,8 @@
+---
+sidebar: auto
+prev: /linux/01-start-nginx.html
+next: /linux/03-linux-commands.html
+---
 # WSL
 ## 版本选择
 WSL1与WSL2版本区别：[https://learn.microsoft.com/zh-cn/windows/wsl/compare-versions](https://learn.microsoft.com/zh-cn/windows/wsl/compare-versions)
