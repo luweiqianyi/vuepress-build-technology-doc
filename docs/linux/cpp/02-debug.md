@@ -1,6 +1,6 @@
 ---
 sidebar: auto
-prev: false
+prev: /linux/cpp/01-dev-env-config.html
 next: false
 ---
 # 调试
