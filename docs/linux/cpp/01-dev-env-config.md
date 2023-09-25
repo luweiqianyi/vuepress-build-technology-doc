@@ -45,7 +45,7 @@ Sep 22 15:09:18 your-username systemd[1]: Starting MySQL Community Server...
 Sep 22 15:09:22 your-username systemd[1]: Started MySQL Community Server.
 ```
 ##### 连接到mysql-server
-```
+```shell
 root@YINC:~# mysql -u root -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -69,7 +69,7 @@ mysql>
 
 以下内容就是根据上面这个源项目中的`README.md`文件中的指示来运行这个项目的，另外补充了一些我在部署过程中所做的操作。
 1. 建库->建表->插入一条记录
-```log
+```shell
 mysql> show databases;
 +--------------------+
 | Database           |
