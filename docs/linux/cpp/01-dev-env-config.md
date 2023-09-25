@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: false
-next: false
+next:  /linux/cpp/02-debug.html
 ---
 # Linux系统开发c++程序
 ## Linux真机环境
