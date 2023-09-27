@@ -126,7 +126,7 @@ Config::~Config()
     ```
     > `!!!`提示`main.cpp`找不到`Config::~Config()`,虽然我们已经在`main.cpp`中将头文件已经包含进来了。
 
-5. 如何解决
+5. <font color=#ff0000>如何解决?</font>
     * 在`config`目录下新建`CMakeLists.txt`空白文件，在文件中加入内容`add_library(LibConfig config.cpp)`
         > LibConfig是自己指定的创建的库的名称，后面会用到
     * 在项目根目录的`CMakeLists.txt`文件中新增一行：`add_subdirectory(config)`, 这样就能找到`config`目录下的`CMakeLists.txt`文件，进而对该目录进行构建。项目根目录下完整的`CMakeLists.txt`内容如下:
