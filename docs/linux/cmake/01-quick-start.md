@@ -35,7 +35,7 @@ add_executable(lesson1 main.cpp)
 
 第6步编译过程：
 ```shell
-root@YINC:~/code/cmake/lesson1# cmake .
+root@your-machine-name:~/code/cmake/lesson1# cmake .
 -- The C compiler identification is GNU 11.4.0
 -- The CXX compiler identification is GNU 11.4.0
 -- Detecting C compiler ABI info
@@ -55,7 +55,7 @@ root@YINC:~/code/cmake/lesson1# cmake .
 
 第7步生成可执行文件过程
 ```shell
-root@YINC:~/code/cmake/lesson1# make
+root@your-machine-name:~/code/cmake/lesson1# make
 [ 50%] Building CXX object CMakeFiles/lesson1.dir/main.cpp.o
 [100%] Linking CXX executable lesson1
 [100%] Built target lesson1
@@ -78,7 +78,7 @@ add_executable(lesson1 main.cpp)
 
 编译过程如下：
 ```shell
-root@YINC:~/code/cmake/lesson1# cmake .
+root@your-machine-name:~/code/cmake/lesson1# cmake .
 -- The C compiler identification is GNU 11.4.0
 -- The CXX compiler identification is GNU 11.4.0
 -- Detecting C compiler ABI info
@@ -146,7 +146,7 @@ int main()
 ```
 当前目录运行命令`make`生成可执行文件`lesson1`,在当前目录执行`./lesson1`运行，输出内容如下:
 ```shell
-root@YINC:~/code/cmake/lesson1# ./lesson1
+root@your-machine-name:~/code/cmake/lesson1# ./lesson1
 Hello world!
 major version: 1.000000, minor version: 1, build date: 2023-09-27
 ```

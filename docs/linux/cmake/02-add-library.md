@@ -36,7 +36,7 @@ next: false
 ### 增加库
 1. 在当前路径下，新建一个目录，作为额外的库目录，比如`config`，同时在该目录下新增`config.h`、`config.cpp`文件，项目结构如下
     ```shell
-    root@YINC:~/code/cmake/lesson2# tree
+    root@your-machine-name:~/code/cmake/lesson2# tree
     .
     ├── CMakeLists.txt
     ├── config
@@ -92,7 +92,7 @@ Config::~Config()
 3. 构建
 运行命令`cmake .`,结果如下:
     ```shell
-    root@YINC:~/code/cmake/lesson2# cmake .
+    root@your-machine-name:~/code/cmake/lesson2# cmake .
     -- The C compiler identification is GNU 11.4.0
     -- The CXX compiler identification is GNU 11.4.0
     -- Detecting C compiler ABI info
@@ -112,7 +112,7 @@ Config::~Config()
 4. 生成可执行文件
 运行命令`make`,结果如下：
     ```shell
-    root@YINC:~/code/cmake/lesson2# make
+    root@your-machine-name:~/code/cmake/lesson2# make
     [ 50%] Building CXX object CMakeFiles/lesson2.dir/main.cpp.o
     [100%] Linking CXX executable lesson2
     /usr/bin/ld: CMakeFiles/lesson2.dir/main.cpp.o: in function `main':
@@ -144,7 +144,7 @@ Config::~Config()
         ```
 6. 此时的项目结构
     ```shell
-    root@YINC:~/code/cmake/lesson2# tree
+    root@your-machine-name:~/code/cmake/lesson2# tree
     .
     ├── CMakeLists.txt
     ├── config
@@ -155,7 +155,7 @@ Config::~Config()
     ```
 7. 项目根目录运行`cmake .`构建项目，构建完成运行`make`生成可执行文件，生成成功运行`./lesson2`运行查看结果，最终效果如下：
     ```shell
-    root@YINC:~/code/cmake/lesson2# cmake .
+    root@your-machine-name:~/code/cmake/lesson2# cmake .
     -- The C compiler identification is GNU 11.4.0
     -- The CXX compiler identification is GNU 11.4.0
     -- Detecting C compiler ABI info
@@ -171,14 +171,14 @@ Config::~Config()
     -- Configuring done
     -- Generating done
     -- Build files have been written to: /root/code/cmake/lesson2
-    root@YINC:~/code/cmake/lesson2# make
+    root@your-machine-name:~/code/cmake/lesson2# make
     [ 25%] Building CXX object config/CMakeFiles/LibConfig.dir/config.cpp.o
     [ 50%] Linking CXX static library libLibConfig.a
     [ 50%] Built target LibConfig
     [ 75%] Building CXX object CMakeFiles/lesson2.dir/main.cpp.o
     [100%] Linking CXX executable lesson2
     [100%] Built target lesson2
-    root@YINC:~/code/cmake/lesson2# ./lesson2
+    root@your-machine-name:~/code/cmake/lesson2# ./lesson2
     Config 0x7ffd671f9cb7 created!
     Hello world!
     Config 0x7ffd671f9cb7 destroy!
