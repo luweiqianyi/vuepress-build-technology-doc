@@ -36,7 +36,7 @@ next: /linux/cmake/03-include-directory.html
 ### 增加库
 1. 在当前路径下，新建一个目录，作为额外的库目录，比如`config`，同时在该目录下新增`config.h`、`config.cpp`文件，项目结构如下
     ```shell
-    root@YINC:~/code/cmake/lesson2# tree
+    root@your-machine-name:~/code/cmake/lesson2# tree
     .
     ├── CMakeLists.txt
     ├── config
@@ -92,7 +92,7 @@ next: /linux/cmake/03-include-directory.html
 3. 构建
 运行命令`cmake .`,结果如下:
     ```shell
-    root@YINC:~/code/cmake/lesson2# cmake .
+    root@your-machine-name:~/code/cmake/lesson2# cmake .
     -- The C compiler identification is GNU 11.4.0
     -- The CXX compiler identification is GNU 11.4.0
     -- Detecting C compiler ABI info
@@ -112,7 +112,7 @@ next: /linux/cmake/03-include-directory.html
 4. 生成可执行文件
 运行命令`make`,结果如下：
     ```shell
-    root@YINC:~/code/cmake/lesson2# make
+    root@your-machine-name:~/code/cmake/lesson2# make
     [ 50%] Building CXX object CMakeFiles/lesson2.dir/main.cpp.o
     [100%] Linking CXX executable lesson2
     /usr/bin/ld: CMakeFiles/lesson2.dir/main.cpp.o: in function `main':
@@ -126,7 +126,7 @@ next: /linux/cmake/03-include-directory.html
     ```
     > `!!!`提示`main.cpp`找不到`Config::~Config()`,虽然我们已经在`main.cpp`中将头文件已经包含进来了。
 
-5. 如何解决
+5. <font color=#ff0000>如何解决?</font>
     * 在`config`目录下新建`CMakeLists.txt`空白文件，在文件中加入内容`add_library(LibConfig config.cpp)`
         > LibConfig是自己指定的创建的库的名称，后面会用到
     * 在项目根目录的`CMakeLists.txt`文件中新增一行：`add_subdirectory(config)`, 这样就能找到`config`目录下的`CMakeLists.txt`文件，进而对该目录进行构建。项目根目录下完整的`CMakeLists.txt`内容如下:
@@ -144,7 +144,7 @@ next: /linux/cmake/03-include-directory.html
         ```
 6. 此时的项目结构
     ```shell
-    root@YINC:~/code/cmake/lesson2# tree
+    root@your-machine-name:~/code/cmake/lesson2# tree
     .
     ├── CMakeLists.txt
     ├── config
@@ -155,7 +155,7 @@ next: /linux/cmake/03-include-directory.html
     ```
 7. 项目根目录运行`cmake .`构建项目，构建完成运行`make`生成可执行文件，生成成功运行`./lesson2`运行查看结果，最终效果如下：
     ```shell
-    root@YINC:~/code/cmake/lesson2# cmake .
+    root@your-machine-name:~/code/cmake/lesson2# cmake .
     -- The C compiler identification is GNU 11.4.0
     -- The CXX compiler identification is GNU 11.4.0
     -- Detecting C compiler ABI info
@@ -171,14 +171,14 @@ next: /linux/cmake/03-include-directory.html
     -- Configuring done
     -- Generating done
     -- Build files have been written to: /root/code/cmake/lesson2
-    root@YINC:~/code/cmake/lesson2# make
+    root@your-machine-name:~/code/cmake/lesson2# make
     [ 25%] Building CXX object config/CMakeFiles/LibConfig.dir/config.cpp.o
     [ 50%] Linking CXX static library libLibConfig.a
     [ 50%] Built target LibConfig
     [ 75%] Building CXX object CMakeFiles/lesson2.dir/main.cpp.o
     [100%] Linking CXX executable lesson2
     [100%] Built target lesson2
-    root@YINC:~/code/cmake/lesson2# ./lesson2
+    root@your-machine-name:~/code/cmake/lesson2# ./lesson2
     Config 0x7ffd671f9cb7 created!
     Hello world!
     Config 0x7ffd671f9cb7 destroy!

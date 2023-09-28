@@ -4,6 +4,26 @@ prev: /linux/02-wsl.html
 next: false
 ---
 # Linux常用命令
+## 账号
+* root账号
+* 用户账号：用户账号执行某些命令时需要在前面加上`sudo`，比如`sudo ufw status`
+
+## 目录
+* `~` 符号表示当前用户的 home 目录，也就是当前登录用户的默认起始目录。
+
+## 防火墙
+* 查看当前防火墙通过的端口: `sudo ufw status`
+* 启动防火墙：`sudo ufw enable`
+* 禁用防火墙：`sudo ufw disable`
+* 允许某个端口通过防火墙
+    * `sudo ufw allow ssh`: 允许通过ssh，默认端口是22
+    * `sudo ufw allow 'Nginx Full'`: 允许通过nginx的所有端口
+    * `sudo ufw allow 1935`: 允许1935端口
+> `ufw`在`linux`系统中可能没有安装，需要执行`sudo apt-get install ufw`来进行安装
+
+## 查找
+* `whereis nginx`: 查找包含`nginx`的目录
+
 ## 查看开放的端口号
 以下命令是`Ubuntu`系统自带的命令，不需要额外安装
 ```shell
@@ -22,7 +42,7 @@ udp6       0      0 ::1:323                 :::*
 ## 查看网络信息
 `ifconfig`命令需要安装`net-tools`，安装命令是:`apt-get install net-tools`
 ```shell
-root@YINC:~# ifconfig
+root@your-machine-name:~# ifconfig
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 172.17.32.44  netmask 255.255.240.0  broadcast 172.17.47.255
         inet6 fe80::215:5dff:fe67:da3b  prefixlen 64  scopeid 0x20<link>
