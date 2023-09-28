@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/cmake/01-quick-start.html
-next: false
+next: /linux/cmake/03-include-directory.html
 ---
 # 增加库依赖
 ## 基础版本
@@ -11,7 +11,7 @@ next: false
 * 新增内容如下
     ```cmake
     cmake_minimum_required(VERSION 3.10)
-    project(lesson1 VERSION 1.0)
+    project(lesson2 VERSION 1.0)
 
     add_executable(lesson2 main.cpp)
     ```
@@ -63,20 +63,20 @@ next: false
     #endif
     ```
 * config.cpp
-```cpp
-#include"config.h"
-#include<cstdio>
+    ```cpp
+    #include"config.h"
+    #include<cstdio>
 
-Config::Config()
-{
-    printf("Config %p created!\n",this);
-}
+    Config::Config()
+    {
+        printf("Config %p created!\n",this);
+    }
 
-Config::~Config()
-{
-    printf("Config %p destroy!\n",this);
-}
-```
+    Config::~Config()
+    {
+        printf("Config %p destroy!\n",this);
+    }
+    ```
 * main.cpp
     ```cpp
     #include <cstdio>
@@ -132,7 +132,7 @@ Config::~Config()
     * 在项目根目录的`CMakeLists.txt`文件中新增一行：`add_subdirectory(config)`, 这样就能找到`config`目录下的`CMakeLists.txt`文件，进而对该目录进行构建。项目根目录下完整的`CMakeLists.txt`内容如下:
         ```cmake
         cmake_minimum_required(VERSION 3.10)
-        project(lesson1 VERSION 1.0)
+        project(lesson2 VERSION 1.0)
 
         # 增加子目录`config`,以便于构建该目录
         add_subdirectory(config)
