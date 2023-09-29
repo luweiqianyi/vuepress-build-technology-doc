@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /images/home.jpg
-heroText: 且与疾风随行的技术小窝
+heroText: 且随疾风前行的技术小窝
 tagline: 积跬步以致千里，汇小流而成江海
 actionText: 快速进入 →
 actionLink: /vuepress-tutorial/00-website-init.html
