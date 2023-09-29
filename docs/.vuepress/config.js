@@ -1,5 +1,5 @@
 module.exports = {
-    title: '且与疾风随行的技术小窝',
+    title: '且随疾风前行的技术小窝',
     description: 'Just playing around',
     themeConfig: {
         siderbar: 'auto',
@@ -42,6 +42,12 @@ module.exports = {
                 items: [
                     { text: 'dev-env', link: '/linux/cpp/01-dev-env-config.html' },
                     { text: 'cmake', link: '/linux/cmake/01-quick-start.html' },
+                ]
+            },
+            {
+                text: 'uni-app',
+                items: [
+                    { text: 'electron', link: '/electron/01-init.html' },
                 ]
             },
         ]
