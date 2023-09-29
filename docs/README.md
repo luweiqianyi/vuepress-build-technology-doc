@@ -4,7 +4,7 @@ heroImage: /images/home.jpg
 heroText: 且随疾风前行的技术小窝
 tagline: 积跬步以致千里，汇小流而成江海
 actionText: 快速进入 →
-actionLink: /vuepress-tutorial/00-website-init.html
+actionLink: /go-zero/01-quick-start.html
 features:
 - title: 站点介绍
   details: 本站点主要用来记录日常开发过程中遇到的技术问题以及相关知识点。
