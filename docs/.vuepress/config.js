@@ -42,6 +42,7 @@ module.exports = {
                 items: [
                     { text: 'dev-env', link: '/linux/cpp/01-dev-env-config.html' },
                     { text: 'cmake', link: '/linux/cmake/01-quick-start.html' },
+                    { text: 'muduo', link: '/linux/muduo/01-quick-start.html' },
                 ]
             },
             {
