@@ -29,7 +29,7 @@ module.exports = {
                 text: 'distribute',
                 items: [
                     { text: 'minio', link: '/distribute/minio/01-minIO.html' },
-                    { text: 'seta', link: '/distribute/seta/01-distribute-transaction-mode.html' },
+                    { text: 'seata', link: '/distribute/seta/01-distribute-transaction-mode.html' },
                     { text: 'metrics', link: '/distribute/metrics/01-prometheus-grafana.html' },
                     { text: 'redis', link: '/distribute/redis/01-pub-sub.html' },
                 ]
