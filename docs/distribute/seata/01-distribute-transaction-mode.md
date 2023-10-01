@@ -1,3 +1,8 @@
+---
+sidebar: auto
+prev: false
+next: false
+---
 # distribute transaction mode
 ## AT
 ## TCC
