@@ -50,6 +50,7 @@ module.exports = {
                     { text: 'electron', link: '/electron/01-init.html' },
                     { text: 'vue', link: '/vue/01-vue-quick-start.html' },
                     { text: 'vuepress', link: '/vuepress-tutorial/00-website-init.html' },
+                    { text: 'web3', link: '/web3/00-web3-survey.html' },
                 ]
             },
             { text: 'algorithm', link: '/algorithm/00-intrduction.html' },
