@@ -34,8 +34,7 @@ module.exports = {
                     { text: 'redis', link: '/distribute/redis/01-pub-sub.html' },
                 ]
             },
-            { text: 'vuepress', link: '/vuepress-tutorial/00-website-init.html' },
-            { text: 'algorithm', link: '/algorithm/00-intrduction.html' },
+            { text: 'audio-video', link: '/audio-video/01-program-linux-nginx-add-rtmp.html' },
             {
                 text: 'linux-cpp-tutorial',
                 items: [
@@ -50,8 +49,10 @@ module.exports = {
                 items: [
                     { text: 'electron', link: '/electron/01-init.html' },
                     { text: 'vue', link: '/vue/01-vue-quick-start.html' },
+                    { text: 'vuepress', link: '/vuepress-tutorial/00-website-init.html' },
                 ]
             },
+            { text: 'algorithm', link: '/algorithm/00-intrduction.html' },
         ]
     }
 }
