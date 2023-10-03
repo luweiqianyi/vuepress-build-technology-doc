@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /vuepress-tutorial/00-website-init.html
-next: false
+next: /vuepress-tutorial/02-deploy-program-2-linux-nginx.html
 ---
 # 自定义定制文档
 ## 基本配置
