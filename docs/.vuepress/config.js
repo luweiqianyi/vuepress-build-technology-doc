@@ -20,12 +20,6 @@ module.exports = {
                 ]
             },
             {
-                text: 'cryptography',
-                items: [
-                    { text: 'TLS', link: '/tls/00-make-cert.html' },
-                ]
-            },
-            {
                 text: 'distribute',
                 items: [
                     { text: 'minio', link: '/distribute/minio/01-minIO.html' },
@@ -34,14 +28,21 @@ module.exports = {
                     { text: 'redis', link: '/distribute/redis/01-pub-sub.html' },
                 ]
             },
+            {
+                text: 'middleware',
+                items: [
+                    { text: 'mongodb', link: '/middleware/mongodb/00-mongodb-survey.html' },
+                ]
+            },
             { text: 'audio-video', link: '/audio-video/01-program-linux-nginx-add-rtmp.html' },
             {
-                text: 'linux-cpp-tutorial',
+                text: 'linux&cpp',
                 items: [
                     { text: 'base', link: '/linux/00-linux-directory.html' },
                     { text: 'dev-env', link: '/linux/cpp/01-dev-env-config.html' },
                     { text: 'cmake', link: '/linux/cmake/01-quick-start.html' },
                     { text: 'muduo', link: '/linux/muduo/01-quick-start.html' },
+                    { text: 'git', link: '/linux/git/00-git-operators.html' },
                 ]
             },
             {
@@ -51,6 +52,12 @@ module.exports = {
                     { text: 'vue', link: '/vue/01-vue-quick-start.html' },
                     { text: 'vuepress', link: '/vuepress-tutorial/00-website-init.html' },
                     { text: 'web3', link: '/web3/00-web3-survey.html' },
+                ]
+            },
+            {
+                text: 'cryptography',
+                items: [
+                    { text: 'TLS', link: '/tls/00-make-cert.html' },
                 ]
             },
             { text: 'algorithm', link: '/algorithm/00-intrduction.html' },

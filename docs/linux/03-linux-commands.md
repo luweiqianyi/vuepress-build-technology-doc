@@ -61,3 +61,9 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         TX packets 32884  bytes 55674854 (55.6 MB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
+
+## 下载远程文件到本地
+```shell
+wget https://github.com/cornerken/bert/archive/master.zip -OutFile "master.zip"
+```
+> 这里`-OutFile`设置本地保存的文件名为`master.zip`，该命令在`Windows`平台下的`powershell`中也能执行
