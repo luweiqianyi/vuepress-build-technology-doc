@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /go/03-graceful-go-code-01.html
-next: false
+next: /go/05-golang-commands.html
 ---
 
 # gin配置pprof

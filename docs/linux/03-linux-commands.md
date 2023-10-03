@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/02-wsl.html
-next: false
+next: /linux/04-linux-libraries.html
 ---
 # Linux常用命令
 ## 账号
