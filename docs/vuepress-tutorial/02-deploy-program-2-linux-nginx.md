@@ -3,7 +3,7 @@ sidebar: auto
 prev: /vuepress-tutorial/01-customize-website.html
 next: false
 ---
-# 项目部署
+# 项目部署到远程Linux上的nginx下
 步骤如下：
 1. 应用打包(以本项目为例)
 2. 执行命令，将本地的文件上传到远程linux服务器
