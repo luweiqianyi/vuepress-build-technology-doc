@@ -49,6 +49,7 @@ module.exports = {
                 text: 'uni-app',
                 items: [
                     { text: 'electron', link: '/electron/01-init.html' },
+                    { text: 'vue', link: '/vue/01-vue-quick-start.html' },
                 ]
             },
         ]
