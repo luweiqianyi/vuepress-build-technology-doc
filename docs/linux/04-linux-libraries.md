@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/03-linux-commands.html
-next: false
+next: /linux/05-linux-firewall.html
 ---
 # Linux libraries
 `build-essential`,`libpcre3`,`libpcre3-dev`和`libssl-dev`都是在`Linux`系统中用于编译和安装软件包时所需的依赖项。这些依赖项通常是在编译安装`Nginx`时所需的，它们提供了许多常见库的包，使得用户无需自己手动安装和解决依赖关系。因此，在安装`Nginx`之前，建议先安装这些软件包以避免出现错误或缺少依赖项的情况。
