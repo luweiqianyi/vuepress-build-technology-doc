@@ -1,6 +1,6 @@
 ---
 sidebar: auto
-prev: false
+prev: /vue/00-npm-commands.html
 next: /vue/02-vue-basic-unit.html
 ---
 # vue quick start
