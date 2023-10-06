@@ -1,7 +1,7 @@
 ---
 sidebar: auto
-prev: /go-zero/06-gateway-config-add-nginx-proxy-supplement.html
-next: /go-zero/06-new-login-request.html
+prev: /go-zero/06-account-docker-image-build.html
+next: /go-zero/06-gateway-config-add-nginx-proxy-supplement.html
 ---
 # 统一网关
 给该项目下的微服务设置一个统一网关，由该网关完成统一鉴权，或者同一功能处理。

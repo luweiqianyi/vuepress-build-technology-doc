@@ -1,9 +1,9 @@
 ---
 sidebar: auto
-prev: /go-zero/06-account-docker-image-build.html
-next: /go-zero/06-gateway-config-add-nginx-proxy.html
+prev: /go-zero/06-gateway-config-add-nginx-proxy.html
+next: /go-zero/06-new-login-request.html
 ---
-# 对 06-gateway-config-add-nginx-proxy.md的补充
+# 对文章[统一网关]的补充
 ## 简介
 本文档是对文档`06-gateway-config-add-nginx-proxy.md`中不足地方的补充。
 ## 遇到的问题

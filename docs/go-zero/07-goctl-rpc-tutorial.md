@@ -82,29 +82,29 @@ service AccountRpcService{
     * 完成后运行`bat`脚本`run-docker-compose.bat`，构建环境，完成后通过`Docker Desktop`可以看到容器的运行状态如下所示:
     ![](./imgs/docker-account-rpc.png)
 7. 编写测试程序，上面的`account-rpc`是我们的服务端程序，且部署在`Docker`环境下，在宿主机上访问该容器的话需要另外编写客户端程序，来对`account-rpc`服务进行访问。参照`cmd/account-rpc/test/account-rpc-client_test.go`,具体代码如下:
-```go
-package test
+    ```go
+    package test
 
-import (
-	"context"
-	"fmt"
-	"github.com/zeromicro/go-zero/zrpc"
-	"go-zero-demo/cmd/account-rpc/accountrpcservice"
-	"go-zero-demo/cmd/account-rpc/pb"
-	"testing"
-)
+    import (
+        "context"
+        "fmt"
+        "github.com/zeromicro/go-zero/zrpc"
+        "go-zero-demo/cmd/account-rpc/accountrpcservice"
+        "go-zero-demo/cmd/account-rpc/pb"
+        "testing"
+    )
 
-func TestRpcClient(t *testing.T) {
-	// 在docker-compose.yml中将宿主机的8003映射到容器的8003端口,所以，在宿主机上使用地址
-	// 127.0.0.1:8003是可以访问我们Docker中启动的account-rpc容器的
-	c := zrpc.RpcClientConf{
-		Target: "127.0.0.1:8003",
-	}
-	client := accountrpcservice.NewAccountRpcService(zrpc.MustNewClient(c))
-	resp, err := client.ValidateToken(context.Background(), &pb.TokenValidateReq{})
-	fmt.Printf("resp: %#v, err: %v\n", resp, err)
-}
-```
+    func TestRpcClient(t *testing.T) {
+        // 在docker-compose.yml中将宿主机的8003映射到容器的8003端口,所以，在宿主机上使用地址
+        // 127.0.0.1:8003是可以访问我们Docker中启动的account-rpc容器的
+        c := zrpc.RpcClientConf{
+            Target: "127.0.0.1:8003",
+        }
+        client := accountrpcservice.NewAccountRpcService(zrpc.MustNewClient(c))
+        resp, err := client.ValidateToken(context.Background(), &pb.TokenValidateReq{})
+        fmt.Printf("resp: %#v, err: %v\n", resp, err)
+    }
+    ```
 8. 查看运行结果:
     ```log
     === RUN   TestRpcClient
