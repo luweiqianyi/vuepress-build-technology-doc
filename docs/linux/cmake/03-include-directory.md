@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/cmake/02-add-library.html
-next: false
+next: /linux/cmake/04-target_link_libraries-command.html
 ---
 # 包含目录
 ## 背景介绍
