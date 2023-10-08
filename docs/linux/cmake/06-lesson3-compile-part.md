@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/cmake/05-lesson3-refactor.html
-next: false
+next: /linux/cmake/07-multiple-project-build-1.html
 ---
 # lesson3部分编译
 ## 背景
