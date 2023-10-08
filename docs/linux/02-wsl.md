@@ -9,6 +9,11 @@ WSL1与WSL2版本区别：[https://learn.microsoft.com/zh-cn/windows/wsl/compare
 
 ## 常用命令
 
+### Windows主机查看wsl中的文件
+* 在`Windows`系统的文件资源管理器的地址栏输入`\\wsl$`即可看到在本机安装的各个分发
+* 然后选择某个分发进入即可
+* 可以将某个`wsl`分发中(比如`Ubuntu-20.04 `)的目录拷贝到`Windows`系统的盘符(比如`D`盘)中
+
 ### 查看WSL版本：`wsl --list --verbose`
 ```shell
 PS C:\WINDOWS\system32> wsl --list --verbose
