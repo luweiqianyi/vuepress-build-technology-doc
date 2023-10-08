@@ -48,16 +48,22 @@ Operating System: Ubuntu 22.04.3 LTS
 ```shell
 # Add Docker's official GPG key:
 sudo apt-get update
+# 安装所需的软件包，其中包括 ca-certificates（证书相关）、curl（网络传输工具）和 gnupg（用于操作 GPG 密钥的工具）
 sudo apt-get install ca-certificates curl gnupg
+# 创建目录 /etc/apt/keyrings，用于存放 GPG 密钥文件
 sudo install -m 0755 -d /etc/apt/keyrings
+# 下载 Docker 的 GPG 密钥，并使用 gpg 工具将其解密（--dearmor），然后将解密后的密钥保存到 /etc/apt/keyrings/docker.gpg 文件中
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+# 修改 /etc/apt/keyrings/docker.gpg 文件的权限，使其可读取
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 
 # Add the repository to Apt sources:
+# 创建一个包含 Docker 仓库信息的行，并将其写入 /etc/apt/sources.list.d/docker.list 文件中
 echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   "$(. /etc/os-release && echo "$UBUNTU_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+# 再次更新软件包列表，以确保新添加的 Docker 仓库已经生效。
 sudo apt-get update
 ```
 > 逐行执行上面的命令
