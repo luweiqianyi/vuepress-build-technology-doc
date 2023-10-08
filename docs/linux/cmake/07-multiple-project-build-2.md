@@ -141,3 +141,6 @@ CMath[0x7ffcd75bd3a6] destroyed!
 > 如上所示：`test`正常执行，且得到了预期的输出结果。
 
 <font color=#3da742>至此就完成了`test`项目引用其他库文件的测试过程。</font>
+
+
+源码地址参见[cmake 多项目构建(使用库)](https://github.com/luweiqianyi/cmake-tutorial/tree/5ac0fc158b5eeb8a5acb9e09626a45b32be04db0/lesson5)

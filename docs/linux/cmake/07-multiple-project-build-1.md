@@ -326,3 +326,5 @@ root@riven:~/code/cmake-tutorial/lesson4# ./bin/server
 I am server
 ```
 > 符合上面两个`main.cpp`的行为输出。
+
+源码地址参见[cmake 多项目构建](https://github.com/luweiqianyi/cmake-tutorial/tree/5ac0fc158b5eeb8a5acb9e09626a45b32be04db0/lesson4)
