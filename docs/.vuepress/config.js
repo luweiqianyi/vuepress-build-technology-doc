@@ -3,6 +3,8 @@ module.exports = {
     description: 'Just playing around',
     themeConfig: {
         siderbar: 'auto',
+        // lastUpdated: 'Last Update',
+        smoothScroll: true, // 页面跳转时，页面平滑滑动  
         nav: [
             { text: '主页', link: '/' },
             {
@@ -61,6 +63,7 @@ module.exports = {
                 ]
             },
             { text: 'algorithm', link: '/algorithm/00-intrduction.html' },
+            { text: 'posts', link: '/posts/index.html' },
         ]
     }
 }
