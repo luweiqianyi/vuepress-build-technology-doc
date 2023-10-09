@@ -212,3 +212,6 @@ su root ./build.sh
 本操作只需要按一下快捷键`F5`，然后按照下面图示进行操作即可
 ![](./imgs/vscode-gdb-attach-3.png)
 ![](./imgs/vscode-gdb-attach-4.png)
+
+## 代码地址
+源码地址：[cmake-tutorial: lesson2](https://github.com/luweiqianyi/cmake-tutorial/tree/346895c9e9af0673a9e7e18e349c636019bd5ecc/lesson2)
