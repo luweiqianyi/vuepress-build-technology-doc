@@ -3,7 +3,7 @@ sidebar: auto
 prev: /linux/muduo/01-quick-start.html
 next: false
 ---
-# muduo CMakeLists.txt
+# muduo CMakeLists.txt详解
 以下文件是整个`muduo`项目的编译配置,具体的指令在配置文件中我已用注释的方式进行详细说明。
 
 ```cmake
