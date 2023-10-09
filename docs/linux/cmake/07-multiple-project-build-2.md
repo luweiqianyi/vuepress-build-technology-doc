@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/cmake/07-multiple-project-build-1.html
-next: false
+next: /linux/cmake/08-vscode-gdb-debug.html
 ---
 # cmake 多项目构建(使用库)
 ## 背景介绍
