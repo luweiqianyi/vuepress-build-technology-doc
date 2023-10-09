@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/04-linux-libraries.html
-next: false
+next: /linux/06-wsl-migrate.html
 ---
 # Linux防火墙
 ## ufw

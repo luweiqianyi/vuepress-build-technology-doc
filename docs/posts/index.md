@@ -68,6 +68,7 @@ next: false
 * [Linux常用命令](/linux/03-linux-commands.html)
 * [Linux libraries](/linux/04-linux-libraries.html)
 * [Linux防火墙](/linux/05-linux-firewall.html)
+* [迁移WSL中Ubuntu-22.04分发到其他盘](/linux/06-wsl-migrate.html)
 ### dev-env
 * [Linux系统开发c++程序](/linux/cpp/01-dev-env-config.html)
 * [调试](/linux/cpp/02-debug.html)
