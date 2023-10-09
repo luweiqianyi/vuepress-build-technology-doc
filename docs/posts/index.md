@@ -9,6 +9,7 @@ next: false
 * [golang GMP模型](/go/01-go-GMP.html)
 * [go开源库收集](/go/02-go-framework.html)
 * [优雅的go代码(一）](/go/03-graceful-go-code-01.html)
+* [优雅的go代码(二）](/go/03-graceful-go-code-02.html)
 * [gin配置pprof](/go/04-gin-pprof.html)
 * [命令说明](/go/05-golang-commands.html)
 
@@ -44,6 +45,7 @@ next: false
 * [MinIO简介](/distribute/minio/01-minIO.html)
 * [go操作MinIO](/distribute/minio/02-go-minIO.html)
 ### seata
+* [seata初体验](/distribute/seata/00-seata-start.html)
 * [distribute transaction mode](/distribute/seata/01-distribute-transaction-mode.html)
 ### metrics
 * [prometheus+grafana搭建微服务监控系统](/distribute/metrics/01-prometheus-grafana.html)

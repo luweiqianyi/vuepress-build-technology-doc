@@ -1,6 +1,6 @@
 ---
 sidebar: auto
-prev: /go/03-graceful-go-code-01.html
+prev: /go/03-graceful-go-code-02.html
 next: /go/05-golang-commands.html
 ---
 
