@@ -28,8 +28,9 @@ next: /go-zero/02-add-new-request-api-tutorial.html
 4. 打开终端(Terminal)，输入命令`go get -u github.com/zeromicro/go-zero@latest`安装`go-zero`框架。后续微服务的开发皆基于此框架进行开发。
 5. 安装`goctl`脚手架，用于一键生成代码、文档、部署 k8s yaml、dockerfile 等。
     ```
-    go get -u github.com/zeromicro/go-zero/tools/goctl@latest
+    go install github.com/zeromicro/go-zero/tools/goctl@latest
     ```
+    > 下载完成后会在`gopath`的`bin`出现`goctl`的可执行文件，同时需要将它的路径添加到环境变量中，以便于命令行能够识别
 6. 利用`goctl`安装`grpc`相关的组件: `protoc`,`protoc-gen-go`,`protoc-gen-go-grpc`
     ```
     goctl env check --install --verbose --force
