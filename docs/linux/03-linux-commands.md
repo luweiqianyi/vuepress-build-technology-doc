@@ -5,7 +5,7 @@ next: /linux/04-linux-libraries.html
 ---
 # Linux常用命令
 ## 账号
-* root账号
+* `root`账号
 * 用户账号：用户账号执行某些命令时需要在前面加上`sudo`，比如`sudo ufw status`
 
 ## 目录
@@ -67,3 +67,19 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 wget https://github.com/cornerken/bert/archive/master.zip -OutFile "master.zip"
 ```
 > 这里`-OutFile`设置本地保存的文件名为`master.zip`，该命令在`Windows`平台下的`powershell`中也能执行
+
+## 查看已经安装的库列表
+```shell
+sudo apt-get install pkg-config
+pkg-config --list-all
+```
+
+## 挂载本地Windows目录到远程Linux服务器
+* 将本地`Windows上`的某个目录共享出去
+* 设置防火墙的入站规则：允许`135-139，445`
+* 查看`Linux`系统下的用户`id`：`id usernameInLinux`
+* 挂载
+  ```shell
+  sudo mount -t cifs -o username=usernameInWiondows,uid=1002,gid=1002,dir_mode=0700,file_mode=0700 //192.168.1.2/test ./dstDir
+  ```
+  > `1002`是上面那条命令执行的结果，挂载`Windows`主机上的`//192.168.1.2/test`目录到`Linux`主机当前执行该命令目录的`./dstDir`目录下
