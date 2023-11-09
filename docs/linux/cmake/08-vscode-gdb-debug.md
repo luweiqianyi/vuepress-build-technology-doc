@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/cmake/07-multiple-project-build-2.html
-next: false
+next: /linux/cmake/09-cmake-default-variable.html
 ---
 # vscode gdb本地调试
 ## 背景介绍
