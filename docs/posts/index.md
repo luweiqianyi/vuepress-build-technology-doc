@@ -44,11 +44,14 @@ next: false
 ### minio
 * [MinIO简介](/distribute/minio/01-minIO.html)
 * [go操作MinIO](/distribute/minio/02-go-minIO.html)
+
 ### seata
 * [seata初体验](/distribute/seata/00-seata-start.html)
 * [distribute transaction mode](/distribute/seata/01-distribute-transaction-mode.html)
+
 ### metrics
 * [prometheus+grafana搭建微服务监控系统](/distribute/metrics/01-prometheus-grafana.html)
+
 ### redis
 * [redis发布订阅模式](/distribute/redis/01-pub-sub.html)
 * [搭建redis集群(一)：docker-compose](/distribute/redis/02-redis-cluster-01.html)
@@ -71,9 +74,12 @@ next: false
 * [Linux libraries](/linux/04-linux-libraries.html)
 * [Linux防火墙](/linux/05-linux-firewall.html)
 * [迁移WSL中Ubuntu-22.04分发到其他盘](/linux/06-wsl-migrate.html)
+* [Ubuntu安装git](/linux/07-ubuntu-install-git.html)
+
 ### dev-env
 * [Linux系统开发c++程序](/linux/cpp/01-dev-env-config.html)
 * [调试](/linux/cpp/02-debug.html)
+
 ### cmake
 * [CMake构建项目](/linux/cmake/01-quick-start.html)
 * [增加库依赖](/linux/cmake/02-add-library.html)
@@ -84,30 +90,39 @@ next: false
 * [cmake 多项目构建](/linux/cmake/07-multiple-project-build-1.html)
 * [cmake 多项目构建(使用库)](/linux/cmake/07-multiple-project-build-2.html)
 * [vscode gdb本地调试](/linux/cmake/08-vscode-gdb-debug.html)
+* [cmake自动生成变量](/linux/cmake/09-cmake-default-variable.html)
+* [include_directories与target_include_directories的区别](/linux/cmake/10-include_directories-target_include_directories.html)
+* [target_include_directories 修饰符介绍](/linux/cmake/11-target_include_directories-public-private-interface.html)
 
 ### muduo
-### git
 * [muduo快速开始](/linux/muduo/01-quick-start.html)
 * [muduo CMakeLists.txt详解](/linux/muduo/02-muduo-CMakeLists.html)
+
+### git
+* [git基本操作](/linux/git/00-git-operators.html)
 
 ## uni-app
 ### electron
 * [electron入门](/electron/01-init.html)
 * [Electron简介](/electron/02-introduction.html)
+
 ### vue
 * [npm命令](/vue/00-npm-commands.html)
 * [vue quick start](/vue/01-vue-quick-start.html)
 * [Vue基本单元](/vue/02-vue-basic-unit.html)
+
 ### vuepress
 * [vuepress搭建技术文档](/vuepress-tutorial/00-website-init.html)
 * [自定义定制文档](/vuepress-tutorial/01-customize-website.html)
 * [项目部署到远程Linux上的nginx下](/vuepress-tutorial/02-deploy-program-2-linux-nginx.html)
+
 ### web3
 * [web3初探](/web3/00-web3-survey.html)
 
 ## cryptography
 ### TLS
 * [web网站支持https | 自签名证书制作](/tls/00-make-cert.html)
+
 ## algorithm
 * [简介](/algorithm/00-intrduction.html)
 * [二分算法](/algorithm/01-binary-search.html)
