@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 prev: /linux/05-linux-firewall.html
-next: false
+next: /linux/07-ubuntu-install-git.html
 ---
 # 迁移WSL中Ubuntu-22.04分发到其他盘
 ## 背景介绍
